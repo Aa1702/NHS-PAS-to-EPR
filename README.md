@@ -2,10 +2,6 @@
 
 # NHS-PAS-to-EPR
 
-![NHS Data Migration Pipeline - Pixel Art Banner](banner.png)
-
-# 🏥 NHS PAS-to-EPR Clinical Data Migration Pipeline
-
 > **An End-to-End ETL (Extract, Transform, Load) pipeline simulating the secure migration of 100,000 legacy hospital records into a modern Electronic Patient Record system.**
 
 ![Migration Summary Results](migration_summary.png)
@@ -25,7 +21,7 @@ This project is an automated **Data Migration Pipeline**. It acts as a strict se
 To simulate a real-world hospital environment, a raw dataset of 100,000 patient records was generated. 
 
 **The Staging Schema (What the messy data looked like):**
-```bash
+
 | Column Name | Data Type | Description |
 | :--- | :--- | :--- |
 | `patient_name` | String | Full name combined (e.g., "John Smith") |
@@ -33,7 +29,7 @@ To simulate a real-world hospital environment, a raw dataset of 100,000 patient 
 | `dob` | String | Date of birth (Contains formatting errors) |
 | `blood_type` | String | Patient blood group |
 | `last_visit` | String | Date of last hospital admission |
-```
+
 
 **Injected Data Quality Issues (The Problems to Solve):**
 * **Missing NHS Numbers (5%):** A critical safety flaw. Patients cannot be accurately tracked across the healthcare system without this ID.
